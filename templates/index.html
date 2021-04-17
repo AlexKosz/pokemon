@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonList</title>
+</head>
+
+<body>
+    <h1>PokemonList</h1>
+
+    {%for i in range(0, len)%}
+    <div class="card" id={{pokemonList[i]["name"]}}>
+        <img src={{getInfo(pokemonList[i]["url"])["sprites"]["front_default"]}} />
+        <h2>{{pokemonList[i]["name"]}}</h2>
+
+
+
+    </div>
+
+
+    {%endfor%}
+
+
+</body>
+
+</html>
